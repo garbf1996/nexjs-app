@@ -1,5 +1,21 @@
-import Image from "next/image";
+"use client";
+import UseClient from "./components/UseClient";
 
 export default function Home() {
-  return <h1>App</h1>;
+  const metedata = {
+    title: "Mi pagina especial home",
+  };
+  return (
+    <section>
+      <h1>Hola mundo</h1>
+      <button
+        onClick={() => {
+          alert("hola garber");
+        }}
+      >
+        Enviar
+      </button>
+      <UseClient />
+    </section>
+  );
 }
